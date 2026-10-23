@@ -32,3 +32,82 @@ button:focus-visible {
     outline: 3px solid var(--cor-destaque);
     outline-offset: 4px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 24px 8%;
+    background-color: var(--cor-superficie);
+}
+
+header > a {
+    color: var(--cor-texto);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--cor-texto-secundario);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+section {
+    padding: 64px 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+#inicio {
+    padding: 100px 0;
+}
+
+#inicio > p,
+#sobre > p {
+    max-width: 65ch;
+    color: var(--cor-texto-secundario);
+}
+
+#inicio > a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
