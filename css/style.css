@@ -1,0 +1,34 @@
+:root {
+    --cor-fundo: #111827;
+    --cor-superficie: #1f2937;
+    --cor-texto: #f9fafb;
+    --cor-texto-secundario: #d1d5db;
+    --cor-destaque: #60a5fa;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--cor-destaque);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 4px;
+}
