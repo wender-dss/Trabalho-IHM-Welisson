@@ -294,3 +294,24 @@ footer p:last-child {
 #inicio > a:hover {
     background-color: #93c5fd;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--cor-destaque);
+    margin-bottom: 24px;
+}
+
+.imagem-projeto {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
