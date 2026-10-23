@@ -162,3 +162,76 @@ p {
     color: var(--cor-texto-secundario);
     margin-bottom: 24px;
 }
+
+#contato form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 24px 0;
+}
+
+#contato form div {
+    display: grid;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--cor-texto-secundario);
+    border-radius: 6px;
+    background-color: var(--cor-superficie);
+    color: var(--cor-texto);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
+
+input:user-invalid,
+textarea:user-invalid {
+    border-color: #fca5a5;
+}
+
+button {
+    justify-self: start;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #93c5fd;
+}
+
+footer {
+    padding: 32px 8%;
+    background-color: var(--cor-superficie);
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 8px;
+    color: var(--cor-texto-secundario);
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}
